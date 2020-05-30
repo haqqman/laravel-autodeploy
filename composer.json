@@ -1,0 +1,28 @@
+{
+    "name": "haqqman/autodeploy",
+    "description": "Let your servers automatically deploy your push to production branch on Github or Bitbucket VCS.",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "haqqman",
+            "email": "devs@haqqman.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haqqman\\Autodeploy": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Haqqman\\Autodeploy\\AutoDeployServiceProvider"
+            ]
+        }
+    }
+}
