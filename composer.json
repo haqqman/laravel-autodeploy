@@ -15,8 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Haqqman\\Autodeploy": "src/"
+            "Haqqman\\Autodeploy\\": "src/"
         }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php file_exists('autodeploy.sh') && chmod('autodeploy.sh', 0755)"
+        ]
     },
     "extra": {
         "laravel": {
